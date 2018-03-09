@@ -2,21 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
+
+    <title>session JS</title>
+
     <title>Gaëlle's web page</title>
 
-     <link rel="stylesheet" href="styles/reset.css">
-      <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Inder|Tenali+Ramakrishna" rel="stylesheet">
-
-     <link rel="stylesheet" href="styles/main.css">
-
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Inder|Tenali+Ramakrishna" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/colorbox.css">
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/jquery.colorbox-min.js"></script>
+    <script src="script/jquery.lettering.js"></script>
 
   </head>
 
   <body>
 
+
     <header>
       <div class="header-content-block">
-      <h1>Gaëlle Roubault</h1>
+        <h1 class="fancy_title">Gaëlle Roubault</h1>
+        <script>
+         $(document).ready(function() {
+           $(".fancy_title").lettering();
+         });
+       </script>
+
+
       <p>Hello everybody ! Welcome to my website. Enjoy !</p>
       </div>
     </header>
@@ -41,13 +54,13 @@
 
             <div class="comp-section-content">
                 <div class="comp-content">
-                  <img src="styles/images/picto1.png" alt="ceci est un picto">
+                  <img src="images/picto1.png" alt="ceci est un picto">
                   <h2>Illustration</h2>
                   <p>Passionée de dessin et d'animation en général depuis l'enfance,l'illustration est une passion que je mets en pratique le plus souvent possible dans mon travail. Je travaille beaucoup à la main, généralement à l'aquarelle et au trait, je commence à utiliser la tablette graphique. </p>
                   <a href="#">Read More</a>
                 </div>
                 <div class="comp-content">
-                  <img src="styles/images/picto2.png" alt="ceci est un picto">
+                  <img src="images/picto2.png" alt="ceci est un picto">
                   <h2>Suite Adobe</h2>
                   <p>J'ai appris à utiliser InDesign, Illustrator et Photoshop pendant mes trois premières années à l'ECV. Je pense mainetnant avoir un bon niveau qui me permet de travailler avec les trois logiciels de façon complémentaire, avecun plus grande maîtrise du contenu print.
                   Sur Indesign je sais faire de la mise en page (livre, magazine et autres) et de la mise en forme de texte. Sur illustartor, je sais faire des tracés à la plume assez complexes, je sais créer des logos et créer des illustration.
@@ -56,7 +69,7 @@
                   <a href="#">Read More</a>
                 </div>
                 <div class="comp-content">
-                  <img src="styles/images/picto3.png" alt="ceci est un picto">
+                  <img src="images/picto3.png" alt="ceci est un picto">
                   <h2>Identité visuelle</h2>
                   <p>L'identité visuelle est un de mes centres d'interets, j'aime axer mon travail dessus. J'ai pu creer quelques logos (dont un est réelement en utilisation). Je m'intéresse beaucoup à la création de l'identité visuelle des marques. </p>
                   <a href="#">Read More</a>
@@ -70,30 +83,39 @@
                 <h1>Mon Portfolio</h1>
                 <div class="portfolio-content">
                     <div class="portfolio-content-item">
-                      <img src="styles/images/projet1.png" alt="This is a protfolio item">
-                      <h2><a href="#">Packaging de parfum</a></h2>
+
+                      <img src="images/projet1.png" alt="This is a protfolio item">
+                      <h2><a class="gallery" href="images/projet1.png">Packaging de parfum</a></h2>
+
                     </div>
+
                     <div class="portfolio-content-item">
-                      <img src="styles/images/projet2.png" alt="This is a protfolio item">
-                      <h2><a href="#">Illustration d'un mot</a></h2>
+                      <img src="images/projet2.png" alt="This is a protfolio item">
+                      <h2><a class="gallery" href="images/projet2.png">Illustration d'un mot</a></h2>
                     </div>
+
                     <div class="portfolio-content-item">
-                      <img src="styles/images/projet3.png" alt="This is a protfolio item">
-                      <h2><a href="#">Pochette de vinyle</a></h2>
+                      <img src="images/projet3.png" alt="This is a protfolio item">
+                      <h2><a class="gallery"s href="images/projet3.png">Pochette de vinyle</a></h2>
                     </div>
+
                     <div class="portfolio-content-item">
-                      <img src="styles/images/projet4.png" alt="This is a protfolio item">
-                      <h2><a href="#">Ex-libris</a></h2>
+                      <img src="images/projet4.png" alt="This is a protfolio item">
+                      <h2><a class="gallery" href="simages/projet4.png">Ex-libris</a></h2>
                     </div>
+
                     <div class="portfolio-content-item">
-                      <img src="styles/images/projet5.png" alt="This is a protfolio item">
-                      <h2><a href="#">Logo animal</a></h2>
+                      <img src="images/projet5.png" alt="This is a protfolio item">
+                      <h2><a class="gallery" href="images/projet5.png">Logo animal</a></h2>
                     </div>
+
                     <div class="portfolio-content-item">
-                      <img src="styles/images/projet6.png" alt="This is a protfolio item">
-                      <h2><a href="#">Photographie</a></h2>
+                      <img src="images/projet6.png" alt="This is a protfolio item">
+                      <h2><a class="gallery" href="images/projet6.png">Photographie</a></h2>
                     </div>
                 </div>
+
+
     </section>
 
 
@@ -115,6 +137,12 @@
 
       </div>
     </footer>
+
+
+    <script>
+        $('a.gallery').colorbox({rel:'gal'});
+       </script>
+
 
   </body>
 </html>
