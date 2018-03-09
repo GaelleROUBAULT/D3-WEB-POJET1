@@ -20,7 +20,7 @@ font-family: 'Inder', sans-serif;
 
 header{
 background color:  #b3ecff;
-background-image: url(images/image01.png);
+background-image: url(image_bg/image01.png);
 background-size: cover;
 min-height: 60vh;
 background-repeat: no-repeat;
@@ -165,6 +165,96 @@ color: #ffffff;
   display: inline;
 }
 
-.char1{
-  font-size: 3em;
+
+.char1 {
+  font-size: 2em;
+  color: #e6ccff;
+  display: inline-block;
+}
+
+.char1:hover {
+  transform: rotateX(45deg);
+}
+.char2 {
+  display: inline-block;
+}
+.char2:hover {
+  transform: rotateX(45deg);
+}
+.char3 {
+  display: inline-block;
+}
+.char3:hover {
+  transform: rotateX(45deg);
+}
+.char4 {
+  display: inline-block;
+}
+.char4:hover {
+  transform: rotateX(45deg);
+}
+.char5 {
+  display: inline-block;
+}
+.char5:hover {
+  transform: rotateX(45deg);
+}
+.char6 {
+  display: inline-block;
+}
+.char6:hover {
+  transform: rotateX(45deg);
+}
+
+
+.char8 {
+  font-size: 2em;
+  color: #e6ccff;
+  display: inline-block;
+}
+
+.char8:hover {
+  transform: rotateX(45deg);
+}
+.char9 {
+  display: inline-block;
+}
+.char9:hover {
+  transform: rotateX(45deg);
+}
+.char10 {
+  display: inline-block;
+}
+.char10:hover {
+  transform: rotateX(45deg);
+}
+.char11 {
+  display: inline-block;
+}
+.char11:hover {
+  transform: rotateX(45deg);
+}
+.char12 {
+  display: inline-block;
+}
+.char12:hover {
+  transform: rotateX(45deg);
+}
+.char13 {
+  display: inline-block;
+}
+.char13:hover {
+  transform: rotateX(45deg);
+}
+.char14 {
+  display: inline-block;
+}
+.char14:hover {
+  transform: rotateX(45deg);
+}
+.char15 {
+  display: inline-block;
+}
+.char15:hover {
+  transform: rotateX(45deg);
 }
